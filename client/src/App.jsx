@@ -30,7 +30,7 @@ function App() {
       setLoading(true);
 
       const response = await axios.post(
-        "http://goat-mode-production.up.railway.app/generate-questions",
+        "https://goat-mode-production.up.railway.app/generate-questions",
         {
           jobDescription,
         }
