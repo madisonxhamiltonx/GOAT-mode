@@ -54,7 +54,7 @@ function App() {
       const question = allQuestions[currentIndex];
 
       const response = await axios.post(
-        "http://goat-mode-production.up.railway.app/evaluate-answer",
+        "https://goat-mode-production.up.railway.app/evaluate-answer",
         {
           question,
           answer,
