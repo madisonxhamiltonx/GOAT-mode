@@ -30,7 +30,7 @@ function App() {
       setLoading(true);
 
       const response = await axios.post(
-        "http://localhost:3001/generate-questions",
+        "http://goat-mode-production.up.railway.app/generate-questions",
         {
           jobDescription,
         }
@@ -54,7 +54,7 @@ function App() {
       const question = allQuestions[currentIndex];
 
       const response = await axios.post(
-        "http://localhost:3001/evaluate-answer",
+        "http://goat-mode-production.up.railway.app/evaluate-answer",
         {
           question,
           answer,
